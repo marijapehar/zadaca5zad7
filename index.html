@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="sr">
+<head>
+  <meta charset="UTF-8">
+  <title>Anonimna funkcija – kvadrat broja</title>
+</head>
+<body>
+  <h2>Testiranje anonimne funkcije</h2>
+
+  <script>
+    const kvadrat = function(x) {
+      if (typeof x === "number") {
+        return x * x;
+      } else {
+        return "Greška: Nije proslijeđen broj.";
+      }
+    };
+
+    document.write("Kvadrat broja 5: " + kvadrat(5) + "<br>");
+    document.write("Pokušaj s tekstom: " + kvadrat("tekst"));
+  </script>
+</body>
+</html>
